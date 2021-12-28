@@ -1,9 +1,9 @@
-package com.gabrielmagalhaes.datastructure;
+package com.gabrielmagalhaes.datastructure.binarytree;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main {
+public class OrderedNumbersBinaryTree {
 
     public static void main(String[] args) {
         int listSize = 100;
