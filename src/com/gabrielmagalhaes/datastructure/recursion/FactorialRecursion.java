@@ -11,10 +11,6 @@ public class FactorialRecursion {
     }
 
     private static int factorialOf(int number) {
-        if (number == 1) {
-            return number;
-        }
-
-        return number * factorialOf(number - 1);
+        return number == 1 ? number : number * factorialOf(number - 1);
     }
 }
