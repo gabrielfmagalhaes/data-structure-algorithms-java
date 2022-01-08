@@ -67,10 +67,10 @@ public class Quicksort {
             }
         }
 
-        List<Integer> result = new ArrayList<>(sortOf(lowers));
-        result.add(middle);
-        result.addAll(sortOf(highers));
-
-        return result;
+        return new ArrayList<>() {{
+            addAll(sortOf(lowers));
+            add(middle);
+            addAll(sortOf(highers));
+        }};
     }
 }
