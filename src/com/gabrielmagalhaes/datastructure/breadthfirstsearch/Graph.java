@@ -42,12 +42,12 @@ public class Graph {
 
      public Person breadthFirst() {
           List<Vertex> visitedVertices = new ArrayList<>();
-          List<Vertex> queueVertex = new ArrayList<>();
+          List<Vertex> queueVertices = new ArrayList<>();
 
-          queueVertex.add(vertices.get(0));
+          queueVertices.add(vertices.get(0));
 
-          while(queueVertex.size() > 0) {
-               Vertex visited = queueVertex.get(0);
+          while(queueVertices.size() > 0) {
+               Vertex visited = queueVertices.get(0);
 
                for (int i = 0; i < visited.getExitEdges().size(); i++) {
                     Vertex neighbor = visited.getExitEdges().get(i).toVertex;
@@ -57,13 +57,13 @@ public class Graph {
                     }
 
                     if (!visitedVertices.contains(neighbor)) {
-                         queueVertex.add(neighbor);
+                         queueVertices.add(neighbor);
                          visitedVertices.add(neighbor);
                     }
 
                }
 
-               queueVertex.remove(0);
+               queueVertices.remove(0);
           }
           return null;
      }
