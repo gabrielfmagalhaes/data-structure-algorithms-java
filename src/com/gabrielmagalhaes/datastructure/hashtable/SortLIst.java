@@ -1,4 +1,4 @@
-package com.gabrielmagalhaes.datastructure.selectionsort;
+package com.gabrielmagalhaes.datastructure.hashtable;
 
 import java.util.*;
 
