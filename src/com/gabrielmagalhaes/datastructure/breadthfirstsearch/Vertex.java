@@ -19,10 +19,6 @@ public class Vertex {
         return person;
     }
 
-    public List<Edge> getEnterEdges() {
-        return enterEdges;
-    }
-
     public List<Edge> getExitEdges() {
         return exitEdges;
     }

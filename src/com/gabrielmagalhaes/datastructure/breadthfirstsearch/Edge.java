@@ -8,8 +8,4 @@ public class Edge {
         this.fromVertex = fromVertex;
         this.toVertex = toVertex;
     }
-
-    public Vertex getToVertex() {
-        return toVertex;
-    }
 }
