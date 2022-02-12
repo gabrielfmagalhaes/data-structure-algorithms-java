@@ -1,4 +1,4 @@
-package com.gabrielmagalhaes.datastructure.binarytree;
+package com.gabrielmagalhaes.datastructure.divideandconquer;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,7 +1,7 @@
 This is a repository dedicated to study, learn and solve Data Structure algorithms from Grokking Algorithms books
 
 ### Contemplated problems ###
-- Binary Tree ✔
+- Divide and Conquer ✔
 - Selection Sort ✔
 - Recursion ✔
 - Quicksort ✔
