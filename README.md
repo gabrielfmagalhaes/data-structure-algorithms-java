@@ -10,7 +10,7 @@ This is a repository dedicated to study, learn and solve Data Structure algorith
 - Hash tables ✔
 - Breadth-First Search ✔
 - Depth First Search
-- Dijkstra's algorithm
+- Dijkstra's algorithm ✔
 - Heaps
 - Queues
 - Priority Queues
