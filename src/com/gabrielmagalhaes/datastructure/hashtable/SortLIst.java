@@ -2,7 +2,7 @@ package com.gabrielmagalhaes.datastructure.hashtable;
 
 import java.util.*;
 
-public class SortLIst {
+public class SortList {
     public static void main(String[] args) {
         Map<String, Integer> unsortedMap = initUnsortedMap();
         Map<String, Integer> sortedMap = sortMap(unsortedMap);
