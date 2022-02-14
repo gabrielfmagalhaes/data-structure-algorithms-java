@@ -3,7 +3,7 @@ package com.gabrielmagalhaes.datastructure.divideandconquer;
 import java.util.ArrayList;
 import java.util.List;
 
-public class OrderedNumbersBinaryTree {
+public class DivideAndConquer {
 
     public static void main(String[] args) {
         int listSize = 100;
@@ -11,7 +11,7 @@ public class OrderedNumbersBinaryTree {
 
         validateResult(
                 expectedValue,
-                findValueInBinaryTree(fillList(listSize), expectedValue));
+                findExpectedValue(fillList(listSize), expectedValue));
     }
 
     private static List<Integer> fillList(int listSize) {
@@ -24,7 +24,7 @@ public class OrderedNumbersBinaryTree {
         return numbers;
     }
 
-    private static int findValueInBinaryTree(List<Integer> orderedNumbers, int expectedValue) {
+    private static int findExpectedValue(List<Integer> orderedNumbers, int expectedValue) {
         int low = 0;
         int higher = orderedNumbers.size();
         int counter = 0;
