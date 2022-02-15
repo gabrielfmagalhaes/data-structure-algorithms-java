@@ -4,16 +4,16 @@ import java.util.Arrays;
 
 public class Queue {
     private int size;
-    private Object[] elements;
+    private Object[] items;
 
     public Queue(int size) {
         this.size = size;
-        this.elements = new Object[size];
+        this.items = new Object[size];
     }
 
     public Object dequeue() {
         if (!isQueueEmpty()) {
-            Object result = this.elements[0];
+            Object result = this.items[0];
             
             updateArray();
 
@@ -26,9 +26,9 @@ public class Queue {
     
     public void enqueue(Object newElement) {
         if (!isQueueFull()) {
-            for (int i = 0; i < this.elements.length; i++) {
-                if (elements[i] == null) {
-                    elements[i] = newElement;
+            for (int i = 0; i < this.items.length; i++) {
+                if (items[i] == null) {
+                    items[i] = newElement;
                     return;
                 }
             }
@@ -38,15 +38,15 @@ public class Queue {
     }
 
     private void updateArray() {
-        this.elements = Arrays.copyOfRange(this.elements, 1, size + 1);
+        this.items = Arrays.copyOfRange(this.items, 1, size + 1);
     }
 
     private boolean isQueueEmpty() {
-        return elements[0] == null;
+        return items[0] == null;
     }
     
     private boolean isQueueFull() {
-        return elements[size - 1] != null;
+        return items[size - 1] != null;
     }
 }
 
